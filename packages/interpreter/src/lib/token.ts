@@ -1,6 +1,6 @@
 import { TokenType } from './tokenType';
 
-class Token {
+export class Token {
   type: TokenType;
   lexeme: string;
   literal: Record<string, string>;

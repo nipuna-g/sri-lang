@@ -2,6 +2,14 @@
   "extends": "../../tsconfig.base.json",
   "files": [],
   "include": [],
+  "ts-node": {
+    "esm": true,
+    "compilerOptions": {
+      "esModuleInterop": true,
+      "module": "ES6", // "module": "CommonJS" should work too
+      "moduleResolution": "node",
+    },
+  },
   "references": [
     {
       "path": "./tsconfig.lib.json"
